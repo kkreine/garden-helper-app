@@ -1,0 +1,18 @@
+- App
+    - Home Page
+        - App header
+            - Title
+            - Description "AppDescription"
+    - Search by Season & location
+        - Selectors "Control Panel"
+            - Load button
+            - Map
+            - Zone Selectors
+                - Radio Button Controls
+            - Season Selectors
+                - Radio Button Controls
+    - Plant Search by Name
+    - Calendar Table
+        - Calendar header
+            - Description "AppDescription"
+

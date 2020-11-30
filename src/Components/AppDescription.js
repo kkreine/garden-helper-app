@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Content(props) {
+function AppDescription(props) {
     return (
         <section className={props.sectionID}>
             {props.children}
@@ -8,4 +8,4 @@ function Content(props) {
     );
 }
 
-export default Content;
+export default AppDescription;
