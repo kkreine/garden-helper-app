@@ -1,4 +1,5 @@
 - App
+    -Nav bar
     - Home Page
         - App header
             - Title
@@ -12,7 +13,40 @@
             - Season Selectors
                 - Radio Button Controls
     - Plant Search by Name
+        - header
+            - description "AppDescription"
+        - SearchBar
     - Calendar Table
         - Calendar header
             - Description "AppDescription"
+
+https://reactjs.org/docs/hooks-effect.html
+https://reactjs.org/docs/state-and-lifecycle.html
+
+
+<li><Link to="/Pages/HomePage">Home Page</Link></li>
+
+<Route exact path="/Pages/HomePage" component= {HomePage} />
+
+class NavBar extends React.Component{
+    render() {
+        return (
+            <Router>
+            <div>
+              <ul id="nav">
+                  
+                  <li><Link to="/Pages/SearchbyLocnSeason">Search by Season and Location</Link></li>
+              </ul>
+              
+                <Route path="/Pages/SearchbyLocnSeason" component={SearchbyLocnSeason} />
+            </div>
+
+            </Router>
+        );
+    }
+}
+
+
+
+
 

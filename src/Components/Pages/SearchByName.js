@@ -1,8 +1,6 @@
 import React from 'react';
-import ControlPanel from '../Control Panel/ControlPanel';
-import RadioButtonGroup from '../RadioButtonGroup/RadioButtonGroup';
-import LoadButton from '../LoadButton/LoadButton';
 import AppDescription from '../AppDescription';
+import SearchBar from '../Bars/SearchBar';
 
 function SearchByName() {
     return (
@@ -13,6 +11,7 @@ function SearchByName() {
                     Enter a name of a plant to get information about it.
                 </p>
             </AppDescription>
+        <SearchBar></SearchBar>
         </div>
     )
 }

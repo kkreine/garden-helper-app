@@ -1,13 +1,12 @@
 import {useState} from "react";
 
 import './App.css';
-
 import PageHeader from '../PageHeader/PageHeader';
 import HomePage from "../Pages/HomePage";
-import NextPage from "../Pages/NextPage";
 import SearchbyLocnSeason from "../Pages/SearchbyLocnSeason";
 import SearchByName from "../Pages/SearchByName";
 import Calendar from "../Pages/Calendar";
+import NavBar from "../Bars/NavBar";
 
 
 function App() {
@@ -43,12 +42,20 @@ function App() {
     {value: "fall", label: "Fall", checked: false},
     {value: "winter", label: "Winter", checked: false}]
   }
+
+ 
+
   return (
     <div className="App">
       <PageHeader>
         Garden Helper
-      </PageHeader>
-      
+      </PageHeader> 
+      <NavBar currentPage={currentPage}
+              setCurrentPage={setCurrentPage}
+              navigationOptions={[{key:"SearchbyLocnSeason", displayName:"Search by Location and Season"},
+                                  {key:"SearchByName", displayName:"Search by Name"},
+                                  {key:"HomePage", displayName:"Home Page"},
+                                  {key:"Calendar", displayName:"Calendar"}]}></NavBar>
       { (() => {
           switch(currentPage) {
             case "SearchbyLocnSeason":

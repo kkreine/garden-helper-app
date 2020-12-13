@@ -2,17 +2,10 @@ import React from 'react';
 import { render } from 'react-dom';
 import AppDescription from '../AppDescription';
 import ControlPanel from '../Control Panel/ControlPanel';
-import RadioButtonGroup from '../RadioButtonGroup/RadioButtonGroup';
-import LoadButton from '../LoadButton/LoadButton';
+import './HomePage.css';
 
-function HomePage({
-    zoneFilters, 
-    selectedZone, 
-    setSelectedZone, 
-    seasonFilters, 
-    selectedSeason, 
-    setSelectedSeason
-}) {
+
+function HomePage() {
     return (
         <div id="page-content">
         <AppDescription sectionID="introduction">
@@ -30,6 +23,7 @@ function HomePage({
         </li>
       </u1>
       </AppDescription>
+      
         </div>
     )
 }

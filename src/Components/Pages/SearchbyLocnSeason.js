@@ -1,7 +1,7 @@
 import React from 'react';
 import ControlPanel from '../Control Panel/ControlPanel';
-import RadioButtonGroup from '../RadioButtonGroup/RadioButtonGroup';
-import LoadButton from '../LoadButton/LoadButton';
+import RadioButtonGroup from '../Buttons/LoadButton/RadioButtonGroup/RadioButtonGroup';
+import LoadButton from '../Buttons/LoadButton/LoadButton';
 
 function SearchbyLocnSeason({
     zoneFilters, 
