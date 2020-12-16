@@ -1,7 +1,5 @@
 import React from 'react';
-import { render } from 'react-dom';
 import AppDescription from '../AppDescription';
-import ControlPanel from '../Control Panel/ControlPanel';
 import './HomePage.css';
 
 
@@ -11,17 +9,17 @@ function HomePage() {
         <AppDescription sectionID="introduction">
       <p>This site will assist you in planting your home garden.</p>
       <h2>Here are some things that the site will do:</h2>
-      <u1>
+      <ul>
         <li>
-          <a>Search growable plants by season and region</a>
+          Search growable plants by season and region
         </li>
         <li>
-          <a>Search for information about a certain plant</a>
+          Search for information about a certain plant
         </li>
         <li>
-          <a>Enter date seeds are planted and generate dates for plant milestones</a>
+          Enter date seeds are planted and generate dates for plant milestones
         </li>
-      </u1>
+      </ul>
       </AppDescription>
       
         </div>

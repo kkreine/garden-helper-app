@@ -1,7 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ControlPanel from '../Control Panel/ControlPanel';
-import RadioButtonGroup from '../Buttons/LoadButton/RadioButtonGroup/RadioButtonGroup';
+import RadioButtonGroup from '../Buttons/RadioButtonGroup/RadioButtonGroup';
 import LoadButton from '../Buttons/LoadButton/LoadButton';
+import DataLoader from '../DataLoader';
+import PlantDisplay from '../PlantDisplay';
+import LocnSeasonDisplay from '../LocnSeasonDisplay';
 
 function SearchbyLocnSeason({
     zoneFilters, 
@@ -9,26 +12,39 @@ function SearchbyLocnSeason({
     setSelectedZone, 
     seasonFilters, 
     selectedSeason, 
-    setSelectedSeason
+    setSelectedSeason,
+    pathType
 }) {
+    const [keyword, setKeyword] = useState('');
+    const [data, setData] = useState(null);
+    const [userEntry, setUserEntry] = useState('');
+
+    let plantData;
+
+    /*
+    <LoadButton 
+          label="Search"
+          handler={(_ev) => {setKeyword(selectedItem)){'}'}}>
+        </LoadButton>
+        */
     return (
+      
         <div id="page-content">
             <ControlPanel>
         <h4>Select the filters for searching by season and region:</h4>
         <h5>Choose your zone based on this map:</h5>
-        <img src= "https://www.edenbrothers.com/store/media/images/usda.png"></img> 
+        <img src="https://www.edenbrothers.com/store/media/images/usda.png" alt="map"></img> 
 
-        <LoadButton 
-          label="Load Data"
-          handler={(ev) => {console.log(`${ev.target} clicked!`)}}>
-        </LoadButton>
+        
         
         <RadioButtonGroup
           groupLabel={zoneFilters.groupLabel} 
           buttonGroup={zoneFilters.buttonGroup}
           idPrefix={zoneFilters.idPrefix}
           buttons={zoneFilters.buttons}
-          handler={(newValue) => {setSelectedZone(newValue)}}
+          handler={(newValue) => {
+            setSelectedZone(newValue);
+            console.log(newValue)}}
           selectedItem={selectedZone}
         ></RadioButtonGroup>
         <RadioButtonGroup
@@ -40,6 +56,16 @@ function SearchbyLocnSeason({
           selectedItem={selectedSeason}
         ></RadioButtonGroup>
       </ControlPanel>
+      
+      <LoadButton handler={(ev) => setKeyword(selectedZone)}
+                        label="Search"></LoadButton>
+
+      <DataLoader pathType={pathType}
+                    keyword={keyword}
+                    setData={setData}></DataLoader>
+              
+      <LocnSeasonDisplay data={data}></LocnSeasonDisplay>
+       
         </div>
     )
 }
