@@ -6,6 +6,7 @@ function PageHeader(props) {
             <h1>
                 {props.children}
             </h1>
+
         </header>
     );
 }

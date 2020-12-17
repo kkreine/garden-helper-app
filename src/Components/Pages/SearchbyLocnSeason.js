@@ -3,8 +3,8 @@ import ControlPanel from '../Control Panel/ControlPanel';
 import RadioButtonGroup from '../Buttons/RadioButtonGroup/RadioButtonGroup';
 import LoadButton from '../Buttons/LoadButton/LoadButton';
 import DataLoader from '../DataLoader';
-import PlantDisplay from '../PlantDisplay';
 import LocnSeasonDisplay from '../LocnSeasonDisplay';
+import './SearchbyLocnSeason.css';
 
 function SearchbyLocnSeason({
     zoneFilters, 
@@ -19,24 +19,14 @@ function SearchbyLocnSeason({
     const [data, setData] = useState(null);
     const [userEntry, setUserEntry] = useState('');
 
-    let plantData;
-
-    /*
-    <LoadButton 
-          label="Search"
-          handler={(_ev) => {setKeyword(selectedItem)){'}'}}>
-        </LoadButton>
-        */
     return (
       
         <div id="page-content">
             <ControlPanel>
         <h4>Select the filters for searching by season and region:</h4>
         <h5>Choose your zone based on this map:</h5>
-        <img src="https://www.edenbrothers.com/store/media/images/usda.png" alt="map"></img> 
+        <img src="https://www.edenbrothers.com/store/media/images/usda.png" alt="map" class="map1" width="700" height="auto"></img> 
 
-        
-        
         <RadioButtonGroup
           groupLabel={zoneFilters.groupLabel} 
           buttonGroup={zoneFilters.buttonGroup}

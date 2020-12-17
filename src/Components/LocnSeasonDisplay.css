@@ -1,0 +1,20 @@
+p {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 3mm;
+    text-align: center;
+    padding-right: 3mm;
+  
+}
+
+.plant {
+    border-radius: 25px;
+    border-color: black;
+    border-style:ridge;
+    background-color: antiquewhite;
+    margin-right: 3mm;
+    margin-bottom: 3mm;
+    text-align: center;
+}
+

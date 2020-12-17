@@ -1,31 +1,33 @@
 import React from 'react';
+import './PlantCard.css';
 
 function PlantCard({plant}) {
     if (!plant) {
         return <></>;
     }
-    /*
-    {
-    "id": 1,
-    "common_name": "Ant Plant",
-    "scientific_name": "Hydnophytum Jack.",
-    "zone": 10,
-    "season": "Purple",
-    "average_height": 6,
-    "row_spacing": 3
-  }*/
-  //return html that displays each of those values
+
   return (
       <div className="plant">
           <p>
-            <strong>
+            <u>
                 {plant.common_name}
-            </strong>
+            </u>
           </p>
           <p>
               <em>{plant.scientific_name}</em>
           </p>
-
+          <p>
+              Average Height: {plant.average_height}
+          </p>
+          <p>
+              Zone: {plant.zone}
+          </p>
+          <p>
+              Row Spacing: {plant.row_spacing}
+          </p>
+          <p>
+              Color: {plant.season}
+          </p>
       </div>
   )
 }

@@ -3,7 +3,7 @@ import './NavBar.css';
 
 function NavBar({currentPage, setCurrentPage, navigationOptions}) {
     return (
-        <div>
+        <div id="nav">
             <ul> {
                     navigationOptions.map((option) => <li key={option.key} className={
                         option.key === currentPage ? "active" : ""
@@ -13,8 +13,12 @@ function NavBar({currentPage, setCurrentPage, navigationOptions}) {
                         }>{option.displayName}</button>
                     </li>)
                 }
+
             </ul>
+    
+
         </div>
+        
     );
 
 }

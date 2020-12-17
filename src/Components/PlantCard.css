@@ -1,0 +1,19 @@
+p {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-left: 7mm;
+        padding-right: 4mm;
+        margin-left: 4mm;
+        text-align: center;
+}
+
+div {
+        text-align: center;
+}
+
+.plant {
+        padding-top: 4mm;
+        text-align: center;
+        margin-top: 4mm;
+}

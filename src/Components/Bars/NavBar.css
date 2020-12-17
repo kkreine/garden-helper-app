@@ -1,11 +1,31 @@
 
-  li {
-    
-  }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    flex-direction: row;
-  }
+}
+
+a {
+  display:block;
+}
+
+#nav li {
+  display: inline;
+}
+
+#nav a {
+  display: block;
+  padding: 8px;
+  background-color:rgb(228, 207, 90);
+}
+
+#nav button {
+  background-color: rgba(0, 0, 0, 0.733);
+  color: white;
+  width: 25%;
+  height: 12mm;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+}

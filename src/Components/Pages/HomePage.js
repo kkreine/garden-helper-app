@@ -7,7 +7,7 @@ function HomePage() {
     return (
         <div id="page-content">
         <AppDescription sectionID="introduction">
-      <p>This site will assist you in planting your home garden.</p>
+      <h1>This site will assist you in planting your home garden.</h1>
       <h2>Here are some things that the site will do:</h2>
       <ul>
         <li>
@@ -19,8 +19,12 @@ function HomePage() {
         <li>
           Enter date seeds are planted and generate dates for plant milestones
         </li>
+        <img src="https://i.pinimg.com/originals/c3/a4/63/c3a463df27fadb50309b8f92caf8bee2.jpg" 
+      alt="plant" class="plantHP" width="auto" height="400"></img>
       </ul>
+      
       </AppDescription>
+
       
         </div>
     )

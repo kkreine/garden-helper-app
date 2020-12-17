@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import LoadButton from '../Buttons/LoadButton/LoadButton';
 
 const SearchBar = ({keyword, setKeyword}) => {
-    const BarStyling = {width:"20rem", background: "#F2F1F9", border:"none", padding:"0.5rem"};
+    const BarStyling = {width:"20rem", background: "#F2F1F9", border:"none", padding:"0.5rem", margin:"1rem"};
     const [userEntry, setUserEntry] = useState('');
     return (
         <div>
