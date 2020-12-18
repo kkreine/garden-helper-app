@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import LoadButton from '../Buttons/LoadButton/LoadButton';
 
-const SearchBar = ({keyword, setKeyword}) => {
-    const BarStyling = {width:"20rem", background: "#F2F1F9", border:"none", padding:"0.5rem", margin:"1rem"};
+const SearchBar = ({ keyword, setKeyword }) => {
+    const BarStyling = { width: "20rem", background: "#F2F1F9", border: "none", padding: "0.5rem", margin: "1rem" };
     const [userEntry, setUserEntry] = useState('');
     return (
         <div>
@@ -14,7 +14,7 @@ const SearchBar = ({keyword, setKeyword}) => {
                 onChange={(ev) => setUserEntry(ev.target.value)}
             />
             <LoadButton handler={(ev) => setKeyword(userEntry)}
-                        label="Search"></LoadButton>
+                label="Search"></LoadButton>
         </div>
     );
 }
