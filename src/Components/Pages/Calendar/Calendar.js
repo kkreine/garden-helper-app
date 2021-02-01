@@ -1,5 +1,5 @@
 import React from 'react';
-import AppDescription from '../AppDescription';
+import AppDescription from '../../AppDescription';
 
 function Calendar() {
     return (

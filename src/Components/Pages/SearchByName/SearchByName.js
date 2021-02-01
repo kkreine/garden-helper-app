@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import AppDescription from '../AppDescription';
-import SearchBar from '../Bars/SearchBar';
-import DataLoader from '../DataLoader';
-import PlantCard from '../PlantCard';
+import AppDescription from '../../AppDescription';
+import SearchBar from '../../Bars/SearchBar';
+import DataLoader from '../../DataLoader';
+import PlantCard from '../../PlantCard';
 import './SearchByName.css';
 
 function SearchByName({ pathType }) {

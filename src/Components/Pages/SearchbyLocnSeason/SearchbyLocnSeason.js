@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import ControlPanel from '../Control Panel/ControlPanel';
-import RadioButtonGroup from '../Buttons/RadioButtonGroup/RadioButtonGroup';
-import LoadButton from '../Buttons/LoadButton/LoadButton';
-import DataLoader from '../DataLoader';
-import LocnSeasonDisplay from '../LocnSeasonDisplay';
+import ControlPanel from '../../Control Panel/ControlPanel';
+import RadioButtonGroup from '../../Buttons/RadioButtonGroup/RadioButtonGroup';
+import LoadButton from '../../Buttons/LoadButton/LoadButton';
+import DataLoader from '../../DataLoader';
+import LocnSeasonDisplay from './LocnSeasonDisplay';
 import './SearchbyLocnSeason.css';
 
 function SearchbyLocnSeason({
