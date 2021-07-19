@@ -6,7 +6,7 @@ function LocnSeasonDataLoader({ pathType, keyword, setData }) {
     useEffect(() => {
         if (pathType && pathType !== '' && keyword && keyword !== '') {
             const url = encodeURI(`http://localhost:3000/${pathType}/${keyword}`);
-            getData(setData, url);
+            getData(url, setData);
         }
     });
 
@@ -15,12 +15,12 @@ function LocnSeasonDataLoader({ pathType, keyword, setData }) {
     );
 }
 
-function getData(setData, url) {
+function getData(url, setData) {
     (async () => {
         const response = await fetch(url);
         const jsObject = await response.json();
         setData(jsObject);
     })();
-}
+} // IIFE = Immediately Invoked Function Expression
 
 export default LocnSeasonDataLoader;
